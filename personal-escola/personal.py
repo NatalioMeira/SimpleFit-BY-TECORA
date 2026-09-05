@@ -1,12 +1,3 @@
-"""
-personal.py
-------------
-Antes, self.escola / self.trabalho / self.diaTreino nunca eram
-preenchidos por ninguém, então o calendário sempre saía "Dia livre"
-o tempo todo. Agora existem métodos para o usuário configurar
-sua rotina de verdade, e o perfil pode ser salvo/recarregado.
-"""
-
 DIAS_SEMANA = ["segunda", "terca", "quarta", "quinta", "sexta", "sabado", "domingo"]
 
 
@@ -29,8 +20,7 @@ class Personal(Pessoa):
         self.escola = {}
         self.trabalho = {}
 
-    # ---------------- Configuração da rotina ----------------
-
+ 
     @staticmethod
     def _ler_dias(texto):
         return [d.strip().lower() for d in texto.split(",") if d.strip()]
@@ -65,7 +55,6 @@ class Personal(Pessoa):
         self.configurar_trabalho()
         self.configurar_academia()
 
-    # ---------------- Exibição ----------------
 
     def calendario(self):
         print("\n========== CALENDÁRIO ==========")
@@ -89,10 +78,8 @@ class Personal(Pessoa):
             if not ocupado:
                 print("Dia livre")
 
-    # mantém compatibilidade com o nome usado antes em algum lugar do código
     mostrar_calendario = calendario
 
-    # ---------------- Persistência ----------------
 
     def to_dict(self):
         return {
