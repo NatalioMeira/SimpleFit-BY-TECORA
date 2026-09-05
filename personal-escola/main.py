@@ -81,7 +81,7 @@ def main():
 
     perfil.calendario()
 
-    print("\n===== SUA DIETA SUGERIDA =====")
+    print("\n===== SUA DIETA E ROTINA DE TREINO =====")
     print(dieta(perfil))
 
     loop_chat(perfil)
