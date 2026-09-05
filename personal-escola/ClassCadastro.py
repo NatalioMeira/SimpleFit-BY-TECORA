@@ -16,7 +16,7 @@ class Usuario:
         self.contato = contato
         self.email = email
         self.idade = idade
-        self.senha = senha  # sempre armazenado como hash
+        self.senha = senha 
 
     def to_dict(self):
         return {
