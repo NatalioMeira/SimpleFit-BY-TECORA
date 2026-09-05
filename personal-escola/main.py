@@ -65,7 +65,7 @@ def loop_chat(perfil):
         mensagem = input("\nVocê: ").strip()
 
         if mensagem.lower() == "sair":
-            print("\nAté a próxima! 💪")
+            print("\nAté a próxima!")
             break
 
         if not mensagem:
