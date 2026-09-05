@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# aceita tanto o nome novo (recomendado) quanto o nome antigo, por compatibilidade
 CHAVE_API = os.getenv("GROQ_API_KEY") or os.getenv("gateway")
 
 _cliente_ia = None
