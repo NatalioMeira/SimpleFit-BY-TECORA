@@ -26,8 +26,6 @@ def _escrever_json(caminho, dados):
         json.dump(dados, f, ensure_ascii=False, indent=2)
 
 
-# ---------------------- Usuários ----------------------
-
 def carregar_usuarios():
     return _ler_json(CAMINHO_USUARIOS, [])
 
@@ -50,7 +48,6 @@ def adicionar_usuario(usuario_dict):
     salvar_usuarios(usuarios)
 
 
-# ---------------------- Perfis (Personal) ----------------------
 
 def carregar_perfis():
     return _ler_json(CAMINHO_PERFIS, {})
