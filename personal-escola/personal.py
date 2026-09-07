@@ -22,6 +22,7 @@ class Personal(Pessoa):
 
  
     @staticmethod
+#        ^ faz nao precisar de um objeto pra executar o metodo.
     def _ler_dias(texto):
         return [d.strip().lower() for d in texto.split(",") if d.strip()]
 
